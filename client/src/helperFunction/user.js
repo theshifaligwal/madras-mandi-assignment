@@ -26,7 +26,6 @@ exports.login = async (data) => {
     identifier: data.email,
     password: data.password,
   };
-  console.log(body);
   const url = `${API_URL}/api/auth/local`;
   const options = {
     method: "POST",
@@ -36,9 +35,13 @@ exports.login = async (data) => {
     },
     body: JSON.stringify(body),
   };
+
+  // Hitting login API
   const response = await fetch(url, options);
+  // Fulfilling the Promise
   const res = await response.json();
-  console.log(res);
+
+  // Setting the local storage if logged in successfully
   if (res.data !== null) {
     this.setUserData(res);
   }
@@ -61,9 +64,12 @@ exports.register = async (data) => {
     },
     body: JSON.stringify(body),
   };
+
+  // Hitting Sign Up API
   const response = await fetch(url, options);
   const res = await response.json();
-  console.log(res);
+
+  // Setting the local storage if logged in successfully
   if (res.data !== null) {
     this.setUserData(res);
   }
