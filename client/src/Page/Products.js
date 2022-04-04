@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import ProductCard from "../Component/ProductCard";
 import products from "../products.json";
 
@@ -7,9 +8,11 @@ const Product = () => {
     event.preventDefault();
   };
 
+  const products = useSelector((state) => state.products);
+  console.log(products);
   return (
     <div className="containerDivProduct">
-      {products.data?.map((product) => (
+      {products?.map((product) => (
         <ProductCard
           key={product.id}
           product={product}

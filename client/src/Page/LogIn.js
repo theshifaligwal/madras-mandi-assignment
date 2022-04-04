@@ -1,21 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { login } from "../actions/actions";
+import { getUserData } from "../helperFunction/user";
+import { Navigate } from "react-router-dom";
 
-const LogIn = () => {
+const LogIn = (props) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isRedirect, setIsRedirect] = useState(false);
+  const dispatch = useDispatch();
+
+  const handelLogin = (event) => {
+    if (email === "" || password === "") return;
+    event.preventDefault();
+    dispatch(login({ email, password }));
+    setIsRedirect(true);
+  };
+
+  const getUser = getUserData();
+
   return (
     <div className="login">
+      {getUser && <Navigate to="/" />}
+      {isRedirect && <Navigate to="/" />}
       <div className="loginWrapper">
         <div className="loginForm">
           <form className="loginBox">
             <div className="containerDivInput">
-              <input placeholder="Email" className="loginInput" type="email" />
               <input
+                placeholder="Email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                className="loginInput"
+                type="email"
+              />
+              <input
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
                 placeholder="Password"
                 className="loginInput"
                 type="password"
                 minLength="6"
               />
             </div>
-            <button className="loginButton" type="submit">
+            <button onClick={handelLogin} className="loginButton" type="submit">
               Log In
             </button>
           </form>
