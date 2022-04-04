@@ -1,6 +1,6 @@
-import { LOGIN, REGISTER } from "../actionType";
+import { LOGIN, LOGOUT, REGISTER } from "../actionType";
 import { API_URL } from "../api";
-import { login, register } from "../helperFunction/user";
+import { login, register, removeUserData } from "../helperFunction/user";
 
 const initialState = {
   products: [],
@@ -21,6 +21,11 @@ const rootReducer = (state = initialState, action) => {
     case REGISTER: {
       console.log(action.user);
       register(action.user);
+      return state;
+    }
+
+    case LOGOUT: {
+      removeUserData();
       return state;
     }
 
