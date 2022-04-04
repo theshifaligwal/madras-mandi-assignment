@@ -39,5 +39,32 @@ exports.login = async (data) => {
   const response = await fetch(url, options);
   const res = await response.json();
   console.log(res);
-  this.setUserData(res);
+  if (res.data !== null) {
+    this.setUserData(res);
+  }
+};
+
+exports.register = async (data) => {
+  const body = {
+    username: data.username,
+    name: data.name,
+    email: data.email,
+    password: data.password,
+  };
+  console.log(body);
+  const url = `${API_URL}/api/auth/local/register`;
+  const options = {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  };
+  const response = await fetch(url, options);
+  const res = await response.json();
+  console.log(res);
+  if (res.data !== null) {
+    this.setUserData(res);
+  }
 };

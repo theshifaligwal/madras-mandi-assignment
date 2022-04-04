@@ -4,6 +4,7 @@ import {
   GET_ALL_PRODUCT,
   LOGIN,
   LOGOUT,
+  REGISTER,
   REMOVE_ITEM_FROM_CART,
 } from "../actionType";
 
@@ -48,7 +49,7 @@ export const login = (user) => {
 // Register
 export const register = (user) => {
   return {
-    type: LOGIN,
+    type: REGISTER,
     user,
   };
 };
@@ -59,5 +60,3 @@ export const logout = () => {
     type: LOGOUT,
   };
 };
-
-

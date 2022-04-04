@@ -1,22 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
+import { register } from "../actions/actions";
+import { useDispatch } from "react-redux";
+import { getUserData } from "../helperFunction/user";
+import { Navigate } from "react-router-dom";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
+
+  const [isRedirect, setIsRedirect] = useState(false);
+  const dispatch = useDispatch();
+
+  const getUser = getUserData();
+
+  const handelRegister = (event) => {
+    event.preventDefault();
+    if (email === "" || password === "" || username === "" || name === "")
+      return;
+
+    dispatch(register({ email, password, username, name }));
+    setIsRedirect(true);
+  };
+
   return (
     <div className="login">
+      {getUser && <Navigate to="/" />}
+      {isRedirect && <Navigate to="/" />}
       <div className="loginWrapper">
         <div className="loginForm">
           <form className="loginBox">
             <div className="containerDivInput">
-              <input placeholder="Username" className="loginInput" />
-              <input placeholder="Email" className="loginInput" type="email" />
               <input
+                placeholder="Name"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                className="loginInput"
+              />
+              <input
+                placeholder="Username"
+                value={username}
+                onChange={(event) => setUsername(event.target.value)}
+                className="loginInput"
+              />
+              <input
+                placeholder="Email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                className="loginInput"
+                type="email"
+              />
+              <input
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
                 placeholder="Password"
                 className="loginInput"
                 type="password"
                 minLength="6"
               />
             </div>
-            <button className="loginButton" type="submit">
+            <button
+              onClick={handelRegister}
+              className="loginButton"
+              type="submit"
+            >
               Sign Up
             </button>
           </form>
