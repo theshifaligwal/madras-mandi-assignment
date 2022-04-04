@@ -6,13 +6,15 @@ const LogIn = () => {
       <div className="loginWrapper">
         <div className="loginForm">
           <form className="loginBox">
-            <input placeholder="Email" className="loginInput" type="email" />
-            <input
-              placeholder="Password"
-              className="loginInput"
-              type="password"
-              minLength="6"
-            />
+            <div className="containerDivInput">
+              <input placeholder="Email" className="loginInput" type="email" />
+              <input
+                placeholder="Password"
+                className="loginInput"
+                type="password"
+                minLength="6"
+              />
+            </div>
             <button className="loginButton" type="submit">
               Log In
             </button>

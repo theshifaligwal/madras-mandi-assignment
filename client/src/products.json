@@ -1,0 +1,215 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "attributes": {
+                "name": "Diya",
+                "price": 120,
+                "meta_description": "Set of 100 coloured unscented wax tealight candles\nOn an average these candles burns up to 2 hours and 45 minutes\nThese candles are smokeless, odorless and do not leave any soot residue\nCan be used with or without candle holders\nSize: Diameter of 3.7 cm and height of 1.2 cm\nIdeal for the festive season, weddings, parties and special events\nUsage instructions: To be placed on heat/flame resistant surfaces, Keep away from things that can catch fire, Keep away from children & pets\nCountry of Origin: India",
+                "meta_title": "diya-100",
+                "slug": "diya",
+                "createdAt": "2022-04-03T19:22:05.289Z",
+                "updatedAt": "2022-04-03T19:22:07.453Z",
+                "publishedAt": "2022-04-03T19:22:07.449Z",
+                "Image": {
+                    "data": {
+                        "id": 1,
+                        "attributes": {
+                            "name": "716GRSUDYdL._SY450_.jpg",
+                            "alternativeText": "716GRSUDYdL._SY450_.jpg",
+                            "caption": "716GRSUDYdL._SY450_.jpg",
+                            "width": 450,
+                            "height": 450,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_716GRSUDYdL._SY450_.jpg",
+                                    "hash": "thumbnail_716_GRSUD_Yd_L_SY_450_4b3220bde2",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 156,
+                                    "height": 156,
+                                    "size": 5.18,
+                                    "url": "/uploads/thumbnail_716_GRSUD_Yd_L_SY_450_4b3220bde2.jpg"
+                                }
+                            },
+                            "hash": "716_GRSUD_Yd_L_SY_450_4b3220bde2",
+                            "ext": ".jpg",
+                            "mime": "image/jpeg",
+                            "size": 20.6,
+                            "url": "/uploads/716_GRSUD_Yd_L_SY_450_4b3220bde2.jpg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-04-03T19:21:30.453Z",
+                            "updatedAt": "2022-04-03T19:21:30.453Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 2,
+            "attributes": {
+                "name": "MIFA A10-MUA 10 Watt Truly Wireless Bluetooth Portable Speaker",
+                "price": 2599,
+                "meta_description": "Bluetooth Speakers, MIFA A10 Portable Soundbox True Wireless Stereo for Party, 16 Hours Playtime, 10W Loud Sound Rich Bass, IP45 Waterproof, Built-in Mic for Handsfree Call, TF Card Slot, Graffiti",
+                "meta_title": "speaker-playtime",
+                "slug": "speaker-playtime",
+                "createdAt": "2022-04-04T18:11:25.161Z",
+                "updatedAt": "2022-04-04T18:11:27.830Z",
+                "publishedAt": "2022-04-04T18:11:27.825Z",
+                "Image": {
+                    "data": {
+                        "id": 2,
+                        "attributes": {
+                            "name": "51m0hHoDiBL._SY450_.jpg",
+                            "alternativeText": "51m0hHoDiBL._SY450_.jpg",
+                            "caption": "51m0hHoDiBL._SY450_.jpg",
+                            "width": 450,
+                            "height": 450,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_51m0hHoDiBL._SY450_.jpg",
+                                    "hash": "thumbnail_51m0h_Ho_Di_BL_SY_450_54f8289ed4",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 156,
+                                    "height": 156,
+                                    "size": 5.36,
+                                    "url": "/uploads/thumbnail_51m0h_Ho_Di_BL_SY_450_54f8289ed4.jpg"
+                                }
+                            },
+                            "hash": "51m0h_Ho_Di_BL_SY_450_54f8289ed4",
+                            "ext": ".jpg",
+                            "mime": "image/jpeg",
+                            "size": 36.24,
+                            "url": "/uploads/51m0h_Ho_Di_BL_SY_450_54f8289ed4.jpg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-04-04T18:10:34.599Z",
+                            "updatedAt": "2022-04-04T18:10:34.599Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 3,
+            "attributes": {
+                "name": "PANEL'S Airtight Glass Jar (200gm pack of 12, White)",
+                "price": 499,
+                "meta_description": "(Pack of 12) 200gms Capacity Bottles is PURE WHITE GLASS JAR not on green shade & its FIRST MADE not recycle \"THIS IS OUR USPS\"\nSuitable to use multipurpose store with alright cap air thight lid no lick of liquid thing also and all thing will be fresh.\nFood grade jar and cap both you can use these to store your foods too & rust proof cap also special coating given in a cap aviod any type of problem to store any food items.\nIdeal for storing food items like coffee,tea,pickle,candy many more items great for gift packaging and look colourful and attractive.\nSafe to use uyou can proper wash also or clean it with wet cloth after use best quality of glass and maxiumum store of items that quantity space also occupied.",
+                "meta_title": "container-glass",
+                "slug": "container-glass",
+                "createdAt": "2022-04-04T18:12:52.960Z",
+                "updatedAt": "2022-04-04T18:12:54.177Z",
+                "publishedAt": "2022-04-04T18:12:54.173Z",
+                "Image": {
+                    "data": {
+                        "id": 3,
+                        "attributes": {
+                            "name": "81Rb2W8glfL._SX450_.jpg",
+                            "alternativeText": "81Rb2W8glfL._SX450_.jpg",
+                            "caption": "81Rb2W8glfL._SX450_.jpg",
+                            "width": 450,
+                            "height": 300,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_81Rb2W8glfL._SX450_.jpg",
+                                    "hash": "thumbnail_81_Rb2_W8glf_L_SX_450_4a1181a8e4",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 234,
+                                    "height": 156,
+                                    "size": 8.43,
+                                    "url": "/uploads/thumbnail_81_Rb2_W8glf_L_SX_450_4a1181a8e4.jpg"
+                                }
+                            },
+                            "hash": "81_Rb2_W8glf_L_SX_450_4a1181a8e4",
+                            "ext": ".jpg",
+                            "mime": "image/jpeg",
+                            "size": 22.29,
+                            "url": "/uploads/81_Rb2_W8glf_L_SX_450_4a1181a8e4.jpg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-04-04T18:12:33.475Z",
+                            "updatedAt": "2022-04-04T18:12:33.475Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 4,
+            "attributes": {
+                "name": "OnePlus Nord CE 2 5G (Bahamas Blue, 8GB RAM, 128GB Storage)",
+                "price": 24999,
+                "meta_description": "65W SUPERVOOC – Accelerated charge velocity shall rocket the 4500mAh battery to a day's power in 15 minutes. Certified by TÜV Rheinland, one shall “Charge & Play” with absolute peace of mind.\nMediatek Dimensity 900 – Powered by a 5G enabled, octa-core monster of a chipset that’s tad more powerful than previous CE, consider this the “Best in class” daily driver for entertainment with its “dragon-slaying” power efficiency, thermal control and support for Wi-Fi 6\n6.43 inch, 90Hz FHD+ AMOLED Display – Shielded by Corning Gorilla Glass 5, scroll, swipe, and enjoy all your entertainment effortlessly on this HDR10+ certified, OnePlus-worthy display.\nAI-infused Triple Camera – This amazing camera setup comprises of a 64MP main sensor, 119° wide-angle and a 16MP selfie shooter. Powered by inhouse algorithm, imaging in badly or unevenly lit environments shall become so much easier.\nAll Flexible – The OnePlus Nord CE 2 is equipped with triple card slots, meaning you have the flexibility to go dual SIM, with an additional micro SD that allows for up to 1TB extendable storage. Also, this phone has a 3.5mm headphone jack.\nDesigned by OnePlus – Coming in at 7.8mm thick, weighing 173g, this is THE slimmest OnePlus phone yet, since the 6T.\nOnePlus Quality – Powered by the most stable version of OxygenOS 11, based on Android 11, this device is easily futureproof, boasting 2 Years of Android version updates and 3 years of worth of security patches via OTA.",
+                "meta_title": "oneplus nord ce 2 5g",
+                "slug": "oneplus-nord-ce-2-5g",
+                "createdAt": "2022-04-04T18:14:22.168Z",
+                "updatedAt": "2022-04-04T18:14:23.411Z",
+                "publishedAt": "2022-04-04T18:14:23.408Z",
+                "Image": {
+                    "data": {
+                        "id": 4,
+                        "attributes": {
+                            "name": "61+Q6Rh3OQL._SX679_.jpg",
+                            "alternativeText": "61+Q6Rh3OQL._SX679_.jpg",
+                            "caption": "61+Q6Rh3OQL._SX679_.jpg",
+                            "width": 679,
+                            "height": 679,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_61+Q6Rh3OQL._SX679_.jpg",
+                                    "hash": "thumbnail_61_Q6_Rh3_OQL_SX_679_ab09998714",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 156,
+                                    "height": 156,
+                                    "size": 3.57,
+                                    "url": "/uploads/thumbnail_61_Q6_Rh3_OQL_SX_679_ab09998714.jpg"
+                                },
+                                "small": {
+                                    "name": "small_61+Q6Rh3OQL._SX679_.jpg",
+                                    "hash": "small_61_Q6_Rh3_OQL_SX_679_ab09998714",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "path": null,
+                                    "width": 500,
+                                    "height": 500,
+                                    "size": 20.45,
+                                    "url": "/uploads/small_61_Q6_Rh3_OQL_SX_679_ab09998714.jpg"
+                                }
+                            },
+                            "hash": "61_Q6_Rh3_OQL_SX_679_ab09998714",
+                            "ext": ".jpg",
+                            "mime": "image/jpeg",
+                            "size": 27.4,
+                            "url": "/uploads/61_Q6_Rh3_OQL_SX_679_ab09998714.jpg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-04-04T18:14:01.124Z",
+                            "updatedAt": "2022-04-04T18:14:01.124Z"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "page": 1,
+            "pageSize": 25,
+            "pageCount": 1,
+            "total": 4
+        }
+    }
+}
