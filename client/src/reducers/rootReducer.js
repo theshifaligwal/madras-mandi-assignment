@@ -8,25 +8,24 @@ const initialState = {
     products: [],
     loading: false,
   },
+  userIsAuthenticated: false,
 };
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOGIN: {
-      console.log(action.user);
       login(action.user);
-      return state;
+      return { ...state, userIsAuthenticated: true };
     }
 
     case REGISTER: {
-      console.log(action.user);
       register(action.user);
-      return state;
+      return { ...state, userIsAuthenticated: true };
     }
-
+    
     case LOGOUT: {
       removeUserData();
-      return state;
+      return { ...state, userIsAuthenticated: false };
     }
 
     default:

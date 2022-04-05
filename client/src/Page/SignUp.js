@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { register } from "../actions/actions";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getUserData } from "../helperFunction/user";
 import { Navigate } from "react-router-dom";
 
@@ -12,6 +12,8 @@ const Login = () => {
 
   const [isRedirect, setIsRedirect] = useState(false);
   const dispatch = useDispatch();
+
+  const userIsAuthenticated = useSelector((state) => state.userIsAuthenticated);
 
   const getUser = getUserData();
 
@@ -26,8 +28,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      {getUser && <Navigate to="/" />}
-      {isRedirect && <Navigate to="/" />}
+      {userIsAuthenticated && <Navigate to="/" />}
       <div className="loginWrapper">
         <div className="loginForm">
           <form className="loginBox">

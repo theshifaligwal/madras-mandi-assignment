@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../actions/actions";
 import { getUserData } from "../helperFunction/user";
 import { Navigate } from "react-router-dom";
@@ -9,6 +9,8 @@ const LogIn = (props) => {
   const [password, setPassword] = useState("");
   const [isRedirect, setIsRedirect] = useState(false);
   const dispatch = useDispatch();
+
+  const userIsAuthenticated = useSelector((state) => state.userIsAuthenticated);
 
   const handelLogin = (event) => {
     if (email === "" || password === "") return;
@@ -21,8 +23,7 @@ const LogIn = (props) => {
 
   return (
     <div className="login">
-      {getUser && <Navigate to="/" />}
-      {isRedirect && <Navigate to="/" />}
+      {userIsAuthenticated && <Navigate to="/" />}
       <div className="loginWrapper">
         <div className="loginForm">
           <form className="loginBox">
