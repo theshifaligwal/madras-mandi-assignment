@@ -309,3 +309,9 @@ nav ul li div:visited:hover {
   font-size: small;
   font-weight: 600;
 }
+
+/* Cart */
+.loginToBuy {
+  width: 100%;
+  text-align: center;
+}

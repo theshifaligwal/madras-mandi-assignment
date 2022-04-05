@@ -7,18 +7,19 @@ import {
 } from "../actions/actions";
 import ProductCard from "../Component/ProductCard";
 import { setOrderData } from "../helperFunction/order";
-import products from "../products.json";
+import { getUserData } from "../helperFunction/user";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.cartProducts);
-  const state = useSelector((state) => state);
+  const userIsAuthenticated = useSelector((state) => state.userIsAuthenticated);
 
   const handelRemoveFromCart = (product) => (event) => {
     event.preventDefault();
     dispatch(removeProductToCart(product));
-    console.log(state);
   };
+
+  const getUser = getUserData();
 
   const handleBuy = () => {
     setOrderData(products);
@@ -37,11 +38,14 @@ const Cart = () => {
           buttonFunction={handelRemoveFromCart(product)}
         />
       ))}
-      {products.length > 0 && (
-        <button onClick={handleBuy} className="btnRemoveFromCart">
-          Buy Now
-        </button>
-      )}
+      {products.length > 0 &&
+        (!(userIsAuthenticated || getUser) ? (
+          <p className="loginToBuy">Please Login to Buy</p>
+        ) : (
+          <button onClick={handleBuy} className="btnRemoveFromCart">
+            Buy Now
+          </button>
+        ))}
     </div>
   );
 };

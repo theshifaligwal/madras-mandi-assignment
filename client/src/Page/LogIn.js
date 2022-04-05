@@ -7,7 +7,6 @@ import { Navigate } from "react-router-dom";
 const LogIn = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isRedirect, setIsRedirect] = useState(false);
   const dispatch = useDispatch();
 
   const userIsAuthenticated = useSelector((state) => state.userIsAuthenticated);
@@ -16,7 +15,6 @@ const LogIn = (props) => {
     if (email === "" || password === "") return;
     event.preventDefault();
     dispatch(login({ email, password }));
-    setIsRedirect(true);
   };
 
   const getUser = getUserData();
