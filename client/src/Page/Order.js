@@ -1,38 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { API_URL } from "../api";
+import { getOrderData } from "../helperFunction/order";
 
 const Order = () => {
+  const [products] = useState(getOrderData());
+
   return (
     <div className="container">
-      <div className="card">
-        <img
-          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXMlMjBuaWtlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-          alt=""
-        />
-        <div className="card-body">
-          <div className="row">
-            <div className="card-title">
-              <h2>Nike Sneaker</h2>
-              <h4>product_title</h4>
-
-              <h3>$120</h3>
+      {!!products &&
+        products.map((product) => (
+          <div key={Math.random()} className="container-order-item">
+            <h2 className="name-order-item">{product.attributes.name}</h2>
+            <div className="meta-div-order-item">
+              <img
+                className="image-order-item"
+                src={`${API_URL}${product.attributes.Image.data.attributes.url}`}
+              ></img>
+              <div>
+                <p className="description-order-item">
+                  {product.attributes.meta_description.slice(0, 100)}
+                </p>
+                <p className="price-order-item">${product.attributes.price}</p>
+                {/* <button className="btnRemoveFromCart">Add to cart</button> */}
+              </div>
             </div>
-            {/* <div className="view-btn">
-            <a href="">View Details</a>
-          </div> */}
           </div>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-            dignissimos.
-          </p>
-          {/* <div className="btn-group">
-          <div className="btn">
-            <a href="">Buy Now</a>
-          </div>
-          <a href=""> Cancel</a>
-        </div> */}
-        </div>
-      </div>
+        ))}
     </div>
   );
 };

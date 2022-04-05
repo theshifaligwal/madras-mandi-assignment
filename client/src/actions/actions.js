@@ -1,12 +1,12 @@
 import {
   ADD_ITEM_TO_CART,
-  BUY,
   GET_ALL_PRODUCT,
   GET_PRODUCT_BY_ID,
   LOGIN,
   LOGOUT,
   REGISTER,
   REMOVE_ITEM_FROM_CART,
+  RESET_CART,
 } from "../actionType";
 
 // Get all product
@@ -26,9 +26,9 @@ export const getProductById = (product) => {
 };
 
 // Buy Products
-export const buyProducts = () => {
+export const resetCart = () => {
   return {
-    type: BUY,
+    type: RESET_CART,
   };
 };
 

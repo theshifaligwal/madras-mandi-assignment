@@ -1,7 +1,12 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addProductToCart, removeProductToCart } from "../actions/actions";
+import {
+  addProductToCart,
+  removeProductToCart,
+  resetCart,
+} from "../actions/actions";
 import ProductCard from "../Component/ProductCard";
+import { setOrderData } from "../helperFunction/order";
 import products from "../products.json";
 
 const Cart = () => {
@@ -13,6 +18,11 @@ const Cart = () => {
     event.preventDefault();
     dispatch(removeProductToCart(product));
     console.log(state);
+  };
+
+  const handleBuy = () => {
+    setOrderData(products);
+    dispatch(resetCart());
   };
 
   // Using Math.random same multiple product
@@ -27,6 +37,11 @@ const Cart = () => {
           buttonFunction={handelRemoveFromCart(product)}
         />
       ))}
+      {products.length > 0 && (
+        <button onClick={handleBuy} className="btnRemoveFromCart">
+          Buy Now
+        </button>
+      )}
     </div>
   );
 };

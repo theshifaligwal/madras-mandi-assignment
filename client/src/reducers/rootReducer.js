@@ -6,8 +6,10 @@ import {
   LOGOUT,
   REGISTER,
   REMOVE_ITEM_FROM_CART,
+  RESET_CART,
 } from "../actionType";
 import { API_URL } from "../api";
+import { removeOrderData } from "../helperFunction/order";
 import { getAllProductsFromAPI } from "../helperFunction/product";
 import { login, register, removeUserData } from "../helperFunction/user";
 
@@ -34,6 +36,7 @@ const rootReducer = (state = initialState, action) => {
 
     case LOGOUT: {
       removeUserData();
+      removeOrderData();
       return { ...state, userIsAuthenticated: false };
     }
 
@@ -56,6 +59,10 @@ const rootReducer = (state = initialState, action) => {
         (product) => product !== action.product
       );
       return newState;
+    }
+
+    case RESET_CART: {
+      return { ...state, cartProducts: [] };
     }
 
     default:

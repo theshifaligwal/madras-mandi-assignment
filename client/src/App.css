@@ -233,6 +233,7 @@ nav ul li div:visited:hover {
 }
 
 .btnRemoveFromCart {
+  margin: 0.5rem;
   padding: 5px 10px;
   border-radius: 10px;
   background-color: white;
@@ -269,6 +270,42 @@ nav ul li div:visited:hover {
   /* font-weight: 600; */
 }
 .price-product-item {
+  font-size: small;
+  font-weight: 600;
+}
+
+/* Order Page */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.container-order-item {
+  width: 90%;
+  height: max-content;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 1px solid orangered;
+  border-radius: 10px;
+}
+.name-order-item {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.image-order-item {
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
+}
+.meta-div-order-item {
+  display: flex;
+  flex-direction: row;
+}
+.description-order-item {
+  font-size: medium;
+  /* font-weight: 600; */
+}
+.price-order-item {
   font-size: small;
   font-weight: 600;
 }

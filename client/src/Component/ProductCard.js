@@ -1,5 +1,6 @@
 import React from "react";
 import { API_URL } from "../api";
+import { Link } from "react-router-dom";
 
 const ProductCard = (props) => {
   const { product, isCart, buttonFunction } = props;
@@ -12,9 +13,10 @@ const ProductCard = (props) => {
         />
       </div>
       <div className="product-details">
-        {/* <span className="product-catagory">Women,bag</span> */}
         <h4>
-          <a href="">{product.attributes.name}</a>
+          <Link to={`/product/${product.id}`} href="">
+            {product.attributes.name}
+          </Link>
         </h4>
         <p>{`${product.attributes.meta_description.slice(0, 200)}...`}</p>
         <div className="product-bottom-details">
