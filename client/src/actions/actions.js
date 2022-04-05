@@ -2,6 +2,7 @@ import {
   ADD_ITEM_TO_CART,
   BUY,
   GET_ALL_PRODUCT,
+  GET_PRODUCT_BY_ID,
   LOGIN,
   LOGOUT,
   REGISTER,
@@ -9,9 +10,18 @@ import {
 } from "../actionType";
 
 // Get all product
-export const getProducts = () => {
+export const getProducts = (products) => {
   return {
     type: GET_ALL_PRODUCT,
+    products,
+  };
+};
+
+// Get product by Id
+export const getProductById = (product) => {
+  return {
+    type: GET_PRODUCT_BY_ID,
+    product,
   };
 };
 

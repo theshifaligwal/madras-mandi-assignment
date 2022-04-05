@@ -11,9 +11,11 @@ const Menu = () => {
     return dispatch(logout());
   };
 
+  const getUser = getUserData();
+
   // Render the auth buttons
   const renderAuthButtons = () => {
-    if (!userIsAuthenticated) {
+    if (!(userIsAuthenticated || getUser)) {
       return (
         <Fragment>
           <li>
@@ -47,7 +49,7 @@ const Menu = () => {
               <li>
                 <Link to="/cart">My Cart</Link>
               </li>
-              {userIsAuthenticated && (
+              {(userIsAuthenticated || getUser) && (
                 <li>
                   <Link to="/order">My Order</Link>
                 </li>

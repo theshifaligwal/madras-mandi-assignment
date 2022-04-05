@@ -21,6 +21,15 @@ exports.removeUserData = () => {
   return data ? JSON.parse(data) : null;
 };
 
+// get token from local storage
+exports.getToken = () => {
+  // get user data from local storage
+  let data = localStorage.getItem("user");
+  data = JSON.parse(data);
+  const token = `Bearer ${data.jwt}`;
+  return token;
+};
+
 exports.login = async (data) => {
   const body = {
     identifier: data.email,

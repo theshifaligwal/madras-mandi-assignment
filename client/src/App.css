@@ -238,9 +238,37 @@ nav ul li div:visited:hover {
   background-color: white;
   border: 1px solid orangered;
   cursor: pointer;
+  width: -webkit-fill-available;
 }
 .btnRemoveFromCart:hover {
   background-color: orangered;
   border: 1px solid white;
   color: white;
+}
+
+/* Product Item */
+
+.container-product-item {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+.name-product-item {
+  font-size: 2rem;
+}
+.image-product-item {
+  width: 40%;
+  height: 40%;
+}
+.meta-div-product-item {
+  display: flex;
+  flex-direction: row;
+}
+.description-product-item {
+  font-size: medium;
+  /* font-weight: 600; */
+}
+.price-product-item {
+  font-size: small;
+  font-weight: 600;
 }

@@ -23,7 +23,7 @@ const LogIn = (props) => {
 
   return (
     <div className="login">
-      {userIsAuthenticated && <Navigate to="/" />}
+      {(userIsAuthenticated || getUser) && <Navigate to="/" />}
       <div className="loginWrapper">
         <div className="loginForm">
           <form className="loginBox">
