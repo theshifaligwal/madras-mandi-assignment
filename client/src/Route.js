@@ -7,10 +7,12 @@ import Cart from "./Page/Cart";
 import Order from "./Page/Order";
 import "./App.css";
 import ProductItem from "./Page/ProductItem";
+import Menu from './Menu';
 
 function App() {
   return (
     <BrowserRouter>
+    <Menu />
       <Routes>
         <Route path="/" exact element={<Products />} />
         <Route path="/signup" exact element={<SignUp />} />
