@@ -1,6 +1,17 @@
-# 🚀 Getting started with Strapi
+# 🚀 Getting started with Strapi Server
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+
+### Use these APIs to run in local
+```
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=x4WnT8gDmF45n2SNiiw0TA==,NyYkSHkxPDFXavwZhr0bOA==,gd9/MciXBGlK0ZXQ8c6qsQ==,xaxu8FLRnIC1T19MWty2Ww==
+JWT_SECRET=0e64e8f3-9e9d-4fea-9e6e-20de4604db8f
+API_TOKEN_SALT=b5e40d556ad5359339b618a4cf5be776
+
+```
+
 
 ### `develop`
 
