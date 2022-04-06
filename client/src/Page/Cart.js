@@ -30,6 +30,7 @@ const Cart = () => {
   // can be added so id will be same
   return (
     <div className="containerDivProduct">
+      {products.length === 0 && <h3>No item in cart please add the product</h3>}
       {products?.map((product) => (
         <ProductCard
           key={Math.random()}
