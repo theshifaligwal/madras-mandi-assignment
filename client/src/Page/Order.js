@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { API_URL } from "../api";
 import { getOrderData } from "../helperFunction/order";
+import { useSelector } from "react-redux";
+import { getUserData } from "../helperFunction/user";
+import { Navigate } from "react-router-dom";
 
 const Order = () => {
   const [products] = useState(getOrderData());
+  const userIsAuthenticated = useSelector((state) => state.userIsAuthenticated);
+  const getUser = getUserData();
 
   return (
     <div className="container">
+      {!(userIsAuthenticated || getUser) && <Navigate to="/" />}
       {!!products &&
         products.map((product) => (
           <div key={Math.random()} className="container-order-item">
@@ -21,7 +27,6 @@ const Order = () => {
                   {product.attributes.meta_description.slice(0, 100)}
                 </p>
                 <p className="price-order-item">${product.attributes.price}</p>
-                {/* <button className="btnRemoveFromCart">Add to cart</button> */}
               </div>
             </div>
           </div>
