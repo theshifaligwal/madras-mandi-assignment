@@ -52,7 +52,7 @@ const login = async (data) => {
 
   // Setting the local storage if logged in successfully
   if (res.data !== null) {
-    this.setUserData(res);
+    setUserData(res);
   }
 };
 
@@ -80,8 +80,8 @@ const register = async (data) => {
 
   // Setting the local storage if logged in successfully
   if (res.data !== null) {
-    this.setUserData(res);
+    setUserData(res);
   }
 };
 
-export {getToken,getUserData,login,register,setUserData}
+export { getToken, getUserData, login, register, setUserData, removeUserData };

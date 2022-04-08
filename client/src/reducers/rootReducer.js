@@ -8,9 +8,7 @@ import {
   REMOVE_ITEM_FROM_CART,
   RESET_CART,
 } from "../actionType";
-import { API_URL } from "../api";
 import { removeOrderData } from "../helperFunction/order";
-import { getAllProductsFromAPI } from "../helperFunction/product";
 import { login, register, removeUserData } from "../helperFunction/user";
 
 const initialState = {

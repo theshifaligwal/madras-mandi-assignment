@@ -1,7 +1,6 @@
 const { API_URL } = require("../api");
 
 const getAllProductsFromAPI = async () => {
-  //   try {
   const url = `${API_URL}/api/products?populate=*`;
   const options = {
     method: "GET",
@@ -35,4 +34,4 @@ const getProductByIdFromAPI = async (productId) => {
   }
 };
 
-export {getAllProductsFromAPI,getProductByIdFromAPI}
+export { getAllProductsFromAPI, getProductByIdFromAPI };

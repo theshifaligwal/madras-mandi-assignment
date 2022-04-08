@@ -1,7 +1,7 @@
 // Set Order data to local storage
 const setOrderData = (data) => {
   // If previous data exist
-  const prevData = this.getOrderData();
+  const prevData = getOrderData();
   if (!!prevData) {
     data.forEach((element) => {
       prevData.push(element);
