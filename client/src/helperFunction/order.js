@@ -1,5 +1,5 @@
 // Set Order data to local storage
-exports.setOrderData = (data) => {
+const setOrderData = (data) => {
   // If previous data exist
   const prevData = this.getOrderData();
   if (!!prevData) {
@@ -15,15 +15,17 @@ exports.setOrderData = (data) => {
 };
 
 // Get Order data from local storage
-exports.getOrderData = () => {
+const getOrderData = () => {
   // get Order data from local storage
   const data = localStorage.getItem("order");
   return JSON.parse(data);
 };
 
 // Remove Order data from local storage
-exports.removeOrderData = () => {
+const removeOrderData = () => {
   // remove Order data from local storage
   const data = localStorage.removeItem("order");
   return data ? JSON.parse(data) : null;
 };
+
+export { getOrderData, removeOrderData, setOrderData };

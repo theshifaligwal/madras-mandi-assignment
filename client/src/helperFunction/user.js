@@ -1,28 +1,28 @@
 const { API_URL } = require("../api");
 
 // Set user data to local storage
-exports.setUserData = (data) => {
+const setUserData = (data) => {
   // To store user data in local storage
   localStorage.setItem("user", JSON.stringify(data));
   return data;
 };
 
 // Get user data from local storage
-exports.getUserData = () => {
+const getUserData = () => {
   // get user data from local storage
   const data = localStorage.getItem("user");
   return JSON.parse(data);
 };
 
 // Remove user data from local storage
-exports.removeUserData = () => {
+const removeUserData = () => {
   // remove user data from local storage
   const data = localStorage.removeItem("user");
   return data ? JSON.parse(data) : null;
 };
 
 // get token from local storage
-exports.getToken = () => {
+const getToken = () => {
   // get user data from local storage
   let data = localStorage.getItem("user");
   data = JSON.parse(data);
@@ -30,7 +30,7 @@ exports.getToken = () => {
   return token;
 };
 
-exports.login = async (data) => {
+const login = async (data) => {
   const body = {
     identifier: data.email,
     password: data.password,
@@ -56,7 +56,7 @@ exports.login = async (data) => {
   }
 };
 
-exports.register = async (data) => {
+const register = async (data) => {
   const body = {
     username: data.username,
     name: data.name,
@@ -83,3 +83,5 @@ exports.register = async (data) => {
     this.setUserData(res);
   }
 };
+
+export {getToken,getUserData,login,register,setUserData}
